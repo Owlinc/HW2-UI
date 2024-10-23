@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="./styles/index.css" rel="stylesheet">
+        <link href="./styles/reset.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="upper_container">
+            <div>
+                <button class="content butt light secondary">Исследования</button>
+                <span class="content light secondary">/</span>
+                <button class="content butt light secondary">EMA</button>
+                <span class="content light secondary">/</span>
+                <button class="content butt bold primary">Исследование о курильщиках</button>
+            </div>
+
+            <div>
+                <button class="base_button round content bold primary">
+                    <img src="./assets/edit.svg">
+                    Редактировать
+                </button>
+            </div>
+        </div>
+
+
+        <div class="main_container">
+            <div class="left_menu"> 
+                <div class="cells_container"> 
+                    <button class="base_button square content bold primary available" onclick="window.location.href='main.html'">
+                        <img src="./assets/info.svg">
+                        Главное
+                    </button>
+                    <button class="base_button square content bold primary chosen">
+                        <img src="./assets/rights.svg">
+                        Права
+                    </button>
+                    <button class="base_button square content bold primary available" onclick="window.location.href='template.html'">
+                        <img src="./assets/template.svg">
+                        Шаблонизация
+                    </button>
+                </div>
+            </div>
+
+            <div class="page_content">  
+
+                <span class="headline_1">Права</span>
+
+                <div class="content_section">
+                    <span class="headline_2">Менеджмент участников</span>
+                    <div class="person_container content light primary">
+                        <img class="person_pic" src="./assets/person_1.png">
+                        <div>Стас Карасёв <span class="content secondary">/stasyan@poema.ru</span></div>
+                    </div>
+                </div>
+
+
+                <div class="content_section">
+                    <span class="headline_2">Выплаты</span>
+                    <div class="person_container content light primary">
+                        <img class="person_pic" src="./assets/person_1.png">
+                        <div>Стас Карасёв <span class="content secondary">/stasyan@poema.ru</span></div>
+                    </div>
+                    <div class="person_container content light primary">
+                        <img class="person_pic" src="./assets/person_2.png">
+                        <div>Екатерина Андреева <span class="content secondary">/kat.andre@poema.ru</span></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </body>
+</html>
