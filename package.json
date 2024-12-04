@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "dev": "parcel main.html",
+    "build": "parcel build main.html"
+  },
+  "name": "hw2-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
