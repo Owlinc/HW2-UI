@@ -5,9 +5,12 @@
 - ✅ Есть функция, отправляющие данные на сервер (POST/PUT/PATCH): `editStudyInfo` (src/scripts/api.js)
 - ✅ Есть функция, динамически формирующая вёрстку с данными, которые были получены с сервера: блок с информацией о сервере и поп-ап редактирования формируются динамически с помощью скрипта `main_page.js` (src/scripts/main_page.js)
 - ✅ Реализован собственный API, соответствующий вёрстке из задания 2:
-  -  Основа: шлюз и база данных Yandex Cloud;
-  - Шлюз: https://d5dimfn9q98ur9skbrh9.apigw.yandexcloud.net/get_study/{study_id};
-  -  Эндпоинты: studies (GET – получение всех исследований в базе)
+  - *Основа:* шлюз и база данных Yandex Cloud
+  - *Шлюз:* https://d5dimfn9q98ur9skbrh9.apigw.yandexcloud.net/get_study/{study_id}
+  - *Эндпоинты:*
+    - /studies: `GET` – получение всех исследований в базе, `POST` – добавление нового исследования
+    - /get_study/{study_id}: `GET` – получение информации об исследвоании с id = study_id
+    - /edit_study/{study_id}: `PATCH` – изменениие информации об исследвоании с id = study_id
 
 ## HW №2 • Nikita Sharin
 
