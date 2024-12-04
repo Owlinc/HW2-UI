@@ -125,7 +125,7 @@ body {
 }
 
 .base_button.remove {
-    padding: 9px 12px; 
+    padding: 7px 12px; 
     border-radius: 8px;
     color: var(--red);
 }

@@ -1,5 +1,13 @@
 import { getStudyInfo, editStudyInfo } from './api.js'
 
+// Функция таймаута
+function sleep(miliseconds) {
+    var currentTime = new Date().getTime();
+ 
+    while (currentTime + miliseconds >= new Date().getTime()) {
+    }
+ }
+
 // Функция для получения URL-параметра из строки
 function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -27,8 +35,10 @@ async function showPopUp(popupBack) {
             // Логика кнопки "Сохранить" в поп-апе
             const saveButton = document.getElementById('popup_button_1');
             saveButton.addEventListener('click', function() {
-                // Обновляем информацию на сервере
+                // Скрываем поп-ап
                 popupBack.style.display = 'none';
+
+                // Обновляем информацию на сервере
                 let data_update = {
                     "study_name": studyNameField.value,
                     "study_description": studyDescField.value
@@ -36,7 +46,10 @@ async function showPopUp(popupBack) {
                 editStudyInfo(studyIdValue, data_update)
 
                 // Обновляем информацию в интерфейсе
-                let component = document.getElementById('default_info');
+                const component = document.getElementById('default_info');
+
+                // Засыпаем на полсекунды, чтобы данные подргрузились на сервер
+                sleep(150)
                 fulfillMainPage(component)
             });
 
@@ -61,7 +74,10 @@ async function fulfillMainPage(component) {
 
     if (studyIdValue) {
         try {
+
+            // Извлекаем данные с сервера
             const study_data = await getStudyInfo(studyIdValue);
+            console.log(study_data.study_name)
             component.innerHTML = `
                 <span class="headline_1">Главное</span>
 
@@ -95,8 +111,7 @@ async function fulfillMainPage(component) {
                     <span class="content light secondary">
                         Средний CR...................<span class="content primary">${study_data.study_avg_cr}</span>
                     </span>
-                </div>
-            `;
+                </div>`;
         } catch (error) {
             console.log('Error fetching study data:', error);
             component.innerHTML = `
@@ -114,8 +129,7 @@ async function fulfillMainPage(component) {
                 <span class="content light secondary">
                     Параметр study_id не указан. Пример валидного study_id – pr215.
                 </span>
-            </div>
-        `;
+            </div>`;
     }
 }
 
