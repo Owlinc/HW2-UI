@@ -17,6 +17,7 @@ function getUrlParameter(name) {
 // Попыка получения параметра 'study_id'
 const studyIdValue = getUrlParameter('study_id');
 
+// Функция для показа поп-апа для редактирования исследования
 async function showPopUp(popupBack) {
     if (studyIdValue) {
         try {
