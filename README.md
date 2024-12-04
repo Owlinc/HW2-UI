@@ -1,6 +1,6 @@
 ## HW №4 • Nikita Sharin
 
-### Done
+### Что сделано?
 - ✅ **Есть функция, получающая данные с сервера (GET):** `getStudyInfo` (src/scripts/api.js)
 - ✅ **Есть функция, отправляющие данные на сервер (POST/PUT/PATCH):** `editStudyInfo` (src/scripts/api.js)
 - ✅ **Есть функция, динамически формирующая вёрстку с данными, которые были получены с сервера:** блок с информацией о сервере и поп-ап редактирования формируются динамически с помощью скрипта `main_page.js` (src/scripts/main_page.js)
@@ -14,10 +14,10 @@
 
 ## HW №2 • Nikita Sharin
 
-### Figma Project
+### Проект в Figma
 https://www.figma.com/design/tzSpDppIKOLjEqBEjJXFTa/PoEMA-%E2%80%A2%C2%A0Screens?node-id=0-1&t=FcWCkxxGGWEpE5ar-1
 
-### Done
+### Что сделано?
 - ✅ Есть ссылка на вёрстку и исходные макеты
 - ✅ Свёрстаны три экрана
 - ✅ В стилях использованы CSS-переменные
