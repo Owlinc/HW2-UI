@@ -268,7 +268,7 @@ function _showPopUp() {
             var component = document.getElementById('default_info');
 
             // Засыпаем на полсекунды, чтобы данные подргрузились на сервер
-            sleep(150);
+            sleep(400);
             fulfillMainPage(component);
           });
 
@@ -380,7 +380,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50963" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55797" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

@@ -3,13 +3,14 @@
     "cors": "^2.8.5"
   },
   "scripts": {
-    "dev": "parcel main.html",
-    "build": "parcel build main.html"
+    "start": "parcel src/*.html",
+    "build": "parcel src/*.html --no-source-maps --public-url ./"
   },
-  "name": "hw2-ui",
+  "name": "poema",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

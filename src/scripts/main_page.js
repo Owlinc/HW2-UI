@@ -49,7 +49,7 @@ async function showPopUp(popupBack) {
                 const component = document.getElementById('default_info');
 
                 // Засыпаем на полсекунды, чтобы данные подргрузились на сервер
-                sleep(150)
+                sleep(400)
                 fulfillMainPage(component)
             });
 
